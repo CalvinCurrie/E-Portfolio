@@ -1,0 +1,50 @@
+body {
+    --white-color: white;
+    --grey-color: rgb(245, 245, 245);
+    --black-color: #242424;
+    --black--light: #1c1d25;
+    --secondary--color: #00b9e8;
+    --secondary--color--darkmode: #93c7d4;
+}
+
+/* BACKGROUND COLOUR */
+
+.modal__about {
+    background-color: var(--grey-color);
+}
+
+
+.social__link,
+.mail__btn {
+    background-color: var(--secondary--color);
+}
+
+.project__wrapper--background {
+    background-color: var(--black--light);
+}
+
+footer, .link__hover-effect:after, footer, .modal__contact {
+    background-color: var(--black-color);
+}
+
+/* FONT COLOUR */
+
+.nav__link--anchor {
+    color: var(--black-color);
+}
+
+.title--secondary,
+.paragraph--secondary,
+.social__link,
+.mail__btn {
+    color: var(--secondary--color);
+}
+
+.project__description,
+.social__link,
+.mail__btn,
+.project__description--link,
+.footer__social--link,
+.footer__copyright, .modal__contact {
+    color: var(--white-color);
+}
