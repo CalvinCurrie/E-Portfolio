@@ -41,3 +41,16 @@
     transform: scale(.9);
     filter: brightness(80%);
 }
+
+.form__submit:hover {
+    border-color: #ffff;
+    background-color: transparent;
+}
+
+.input:hover, textarea:hover {
+    border-color: white;
+}
+
+input:focus, textarea:focus {
+    border-color: red;
+}

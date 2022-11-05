@@ -2,7 +2,23 @@
     0% {
         transform: translateY(3px);
     }
+
     100% {
         transform: translateY(-3px);
+    }
+}
+
+
+.fa-spinner {
+    animation: spinner 1100ms infinite linear;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
     }
 }

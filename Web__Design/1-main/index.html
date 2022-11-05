@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../1-main/text__color.css" />
     <link rel="stylesheet" href="../2_assets/img_styling.css" />
     <link rel="stylesheet" href="../3_Animations/hover/hover.css" />
+    <link rel="stylesheet" href="../3_Animations/transitions/transitions.css">
     <script
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
@@ -97,9 +98,9 @@
           </h3>
           <h4 class="modal__sub-title modal__sub-title--about"></h4>
           <p class="modal__para">
-            I'm 19 years old, my name is
-            <span class="paragraph--secondary"> Calvin Currie </span>, I am a
-            frontend enthusiast developer from Australia. My passion is keeping
+            My name is
+            <span class="paragraph--secondary"> Calvin Currie, </span>I am a
+            self taught frontend developer from Australia. My passion is keeping
             websites <span class="paragraph--secondary">simplicite</span> for
             customers but packed with a
             <span class="paragraph--secondary">features and creativity.</span>
@@ -165,9 +166,14 @@
               ></textarea>
             </div>
             <div class="form__item">
-              <button id="contact__submit" class="form__submit">Send it my way</button>
+              <button id="contact__submit" class="form__submit">
+                Send it my way
+              </button>
             </div>
           </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fas fa-spinner"></i>
+          </div>
         </div>
       </div>
     </section>

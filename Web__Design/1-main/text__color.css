@@ -7,6 +7,14 @@ body {
     --secondary--color--darkmode: #93c7d4;
 }
 
+
+/* BACKGROUND / FONT COLOUR */
+
+.form__submit:active {
+    border-color: var(--secondary--color);
+    color: var(--secondary--color);
+}
+
 /* BACKGROUND COLOUR */
 
 .modal__about {
