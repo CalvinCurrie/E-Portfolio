@@ -8,15 +8,6 @@
     <link rel="stylesheet" href="../1-main/text__color.css" />
     <link rel="stylesheet" href="../2_assets/img_styling.css" />
     <link rel="stylesheet" href="../3_Animations/hover/hover.css" />
-    <link
-      rel="stylesheet"
-      href="../3_Transitions/transitions/transitions.css"
-    />
-    <script src="./app.js" defer></script>
-    <link
-      rel="stylesheet"
-      href="../3_Transitions/transitions/transitions.css"
-    />
     <script
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
@@ -53,9 +44,7 @@
             >
           </li>
           <li class="nav__link">
-            <a
-              href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+            <a href="#" class="nav__link--anchor"
               ><i class="fas fa-adjust click"></i
             ></a>
           </li>
@@ -108,37 +97,78 @@
           </h3>
           <h4 class="modal__sub-title modal__sub-title--about"></h4>
           <p class="modal__para">
-            I'm 19 years old, my name is Calvin Currie, I am a frontend
-            enthusiast developer from Australia. My passion is keeping websites
-            simplicite for customers but packed with a features and creativity.
+            I'm 19 years old, my name is
+            <span class="paragraph--secondary"> Calvin Currie </span>, I am a
+            frontend enthusiast developer from Australia. My passion is keeping
+            websites <span class="paragraph--secondary">simplicite</span> for
+            customers but packed with a
+            <span class="paragraph--secondary">features and creativity.</span>
             <br />
-            I have been studying and implying my work to
-            build up my portfolio, but most importantly my skill set in hope to
-            become a frontend developer. I believe I am ready for my next big
-            stage with my coding journey, where I hope to fill a role as a
-            frontend developer for your company.
-            <br />
-            My studies include HTML, CSS, JavaScript and React. Learning with
-            Frontend Simplified, I have been able to implement my skills into
-            practical use, learnt how to interact/help others on projects in a community and
-            finally was taught best practices when writting code.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+            beatae mollitia possimus laudantium reiciendis ea harum numquam.
           </p>
           <div class="modal__languages">
             <figure class="modal__language">
-              <img class="modal__language--img" src="../2_assets/images/html__logo.png" alt="">
+              <img
+                class="modal__language--img"
+                src="../2_assets/images/html__logo.png"
+                alt=""
+              />
+              <span class="lanuage__name">HTML</span>
             </figure>
             <figure class="modal__language">
-              <img class="modal__language--img" src="../2_assets/images/CSS__logo.png" alt="">
+              <img
+                class="modal__language--img"
+                src="../2_assets/images/CSS__logo.png"
+                alt=""
+              />
+              <span class="lanuage__name">CSS</span>
             </figure>
             <figure class="modal__language">
-              <img class="modal__language--img" src="../2_assets/images/JS__logo.png" alt="">
+              <img
+                class="modal__language--img"
+                src="../2_assets/images/JS__logo.png"
+                alt=""
+              />
+              <span class="lanuage__name">JavaScript</span>
             </figure>
             <figure class="modal__language">
-              <img class="modal__language--img" src="../2_assets/images/React.png" alt="">
+              <img
+                class="modal__language--img"
+                src="../2_assets/images/React.png"
+                alt=""
+              />
+              <span class="lanuage__name">React</span>
             </figure>
           </div>
         </div>
-        <div class="modal__half modal__contact">Let's have a chat</div>
+        <div class="modal__half modal__contact">
+          <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
+          <h4 class="modal__sub-title modal__sub-title--contact">
+            I'm currently open to new opportunities.
+          </h4>
+          <form action="" id="contact__form">
+            <div class="form__item">
+              <label class="form__item--label">Name</label>
+              <input class="input" name="user_name" type="text" required />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Email</label>
+              <input class="input" name="user_email" type="email" required />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Message:</label>
+              <textarea
+                class="form__item--label"
+                name="message"
+                type="text"
+              ></textarea>
+            </div>
+            <div class="form__item">
+              <button id="contact__submit" class="form__submit">Send it my way</button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
 

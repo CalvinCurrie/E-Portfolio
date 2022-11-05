@@ -32,3 +32,12 @@
     left: 0;
     width: 100%;
 }
+
+.modal__language:hover .lanuage__name {
+    transform: scale(1);
+}
+
+.modal__language:hover {
+    transform: scale(.9);
+    filter: brightness(80%);
+}

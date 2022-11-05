@@ -3,7 +3,7 @@ body {
     --grey-color: rgb(245, 245, 245);
     --black-color: #242424;
     --black--light: #1c1d25;
-    --secondary--color: #00b9e8;
+    --secondary--color: #c13b1d;
     --secondary--color--darkmode: #93c7d4;
 }
 
@@ -15,7 +15,8 @@ body {
 
 
 .social__link,
-.mail__btn {
+.mail__btn,
+.form__submit {
     background-color: var(--secondary--color);
 }
 
@@ -23,7 +24,12 @@ body {
     background-color: var(--black--light);
 }
 
-footer, .link__hover-effect:after, footer, .modal__contact {
+footer,
+.link__hover-effect:after,
+footer,
+.modal__contact,
+input,
+textarea {
     background-color: var(--black-color);
 }
 
@@ -41,10 +47,13 @@ footer, .link__hover-effect:after, footer, .modal__contact {
 }
 
 .project__description,
+input,
+textarea,
 .social__link,
 .mail__btn,
 .project__description--link,
 .footer__social--link,
-.footer__copyright, .modal__contact {
+.footer__copyright,
+.modal__contact, .form__submit {
     color: var(--white-color);
 }
