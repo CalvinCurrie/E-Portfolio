@@ -54,3 +54,11 @@
 input:focus, textarea:focus {
     border-color: red;
 }
+
+.modal__exit:hover {
+    transform: scale(1.1);
+}
+
+.modal__exit:active {
+    transform: scale(0.9);
+}

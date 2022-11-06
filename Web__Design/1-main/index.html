@@ -4,16 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../1-main/style.css" />
+    <script src="../1-main/app.js" defer></script>
     <link rel="stylesheet" href="../1-main/text__color.css" />
     <link rel="stylesheet" href="../2_assets/img_styling.css" />
     <link rel="stylesheet" href="../3_Animations/hover/hover.css" />
-    <link rel="stylesheet" href="../3_Animations/transitions/transitions.css">
+    <link rel="stylesheet" href="../3_Animations/transitions/transitions.css" />
+    <script src="../4_Outside__Sources/email.js"></script>
+
     <script
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
     ></script>
     <title>E-Portfolio</title>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("-MX6IdXQEpHO0KndY");
+      })();
+    </script>
   </head>
   <body>
     <!-- LANDING PAGE -->
@@ -27,6 +39,7 @@
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              onclick="toggleModal()"
               >About</a
             >
           </li>
@@ -41,6 +54,7 @@
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              onclick="toggleModal()"
               >Contact</a
             >
           </li>
@@ -52,7 +66,7 @@
         </ul>
       </nav>
       <header>
-        <div class="header-content">
+        <div class="header-content header">
           <h1 class="title">Hey</h1>
           <h1 class="title title--secondary">Im Calvin</h1>
           <p class="header__para">
@@ -61,7 +75,9 @@
             passion for building web applications with great user
             experiences.<br />
             heres a bit more
-            <b class="paragraph--secondary">about me</b>
+            <b class="paragraph--secondary onClick" onclick="toggleModal()"
+              >about me</b
+            >
             <!-- with greate user experiences -> with simplicity -->
           </p>
           <div class="social__list">
@@ -85,7 +101,7 @@
           </div>
         </div>
       </header>
-      <button class="mail__btn click">
+      <button class="mail__btn click" onclick="toggleModal()">
         <i class="fas fa-envelope"></i>
       </button>
       <a href="#projects" class="scroll">
@@ -144,18 +160,19 @@
           </div>
         </div>
         <div class="modal__half modal__contact">
+          <i class="fas fa-times modal__exit" onclick="toggleModal()"></i>
           <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
           <h4 class="modal__sub-title modal__sub-title--contact">
             I'm currently open to new opportunities.
           </h4>
-          <form action="" id="contact__form">
+          <form onsubmit="contact(event)" id="contact__form">
             <div class="form__item">
               <label class="form__item--label">Name</label>
-              <input class="input" name="user_name" type="text" required />
+              <input class="input" name="user_name" type="text" />
             </div>
             <div class="form__item">
               <label class="form__item--label">Email</label>
-              <input class="input" name="user_email" type="email" required />
+              <input class="input" name="user_email" type="email" />
             </div>
             <div class="form__item">
               <label class="form__item--label">Message:</label>
@@ -173,6 +190,9 @@
           </form>
           <div class="modal__overlay modal__overlay--loading">
             <i class="fas fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">
+            Thanks for the message! Looking forward to speaking to you soon.
           </div>
         </div>
       </div>
@@ -302,6 +322,7 @@
             <a
               href="#"
               class="footer__social--link link__hover-effect link__hover-effect--white"
+              onclick="toggleModal()"
               >Contact</a
             >
             <a
