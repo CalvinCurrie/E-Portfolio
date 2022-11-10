@@ -1,12 +1,38 @@
-body {
+:root {
     --white-color: white;
     --grey-color: rgb(245, 245, 245);
     --black-color: #242424;
     --black--light: #1c1d25;
-    --secondary--color: #c13b1d;
+    --secondary--color: #1e0f81;
     --secondary--color--darkmode: #93c7d4;
     --success--color: #4bb543;
+    --background--color-darkTheme: rgb(24, 24, 24);
 }
+
+
+.darkTheme {
+    --secondary--color: rgb(1, 117, 140);
+    --black-color: white;
+}
+
+.darkTheme p,
+.darkTheme .section__title {
+    color: var(--white-color);
+}
+
+.darkTheme #personal-logo {
+    filter: invert(0);
+}
+
+
+.darkTheme footer {
+    background-color: #242424;
+}
+
+.darkTheme section {
+    background-color: var(--background--color-darkTheme);
+}
+
 
 
 /* BACKGROUND / FONT COLOUR */
@@ -49,7 +75,8 @@ textarea,
 
 /* FONT COLOUR */
 
-.nav__link--anchor {
+.nav__link--anchor,
+.title {
     color: var(--black-color);
 }
 
