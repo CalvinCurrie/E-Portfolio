@@ -6,13 +6,17 @@
     --secondary--color: #1e0f81;
     --secondary--color--darkmode: #93c7d4;
     --success--color: #4bb543;
-    --background--color-darkTheme: rgb(24, 24, 24);
+    --background--color-darkTheme: #242424;
 }
 
 
 .darkTheme {
     --secondary--color: rgb(1, 117, 140);
     --black-color: white;
+}
+
+.darkTheme .modal__contact {
+    background-color: #242424;
 }
 
 .darkTheme p,
@@ -33,7 +37,9 @@
     background-color: var(--background--color-darkTheme);
 }
 
-
+.darkTheme .modal__para, .darkTheme input, .darkTheme textarea {
+    color: black;
+}
 
 /* BACKGROUND / FONT COLOUR */
 

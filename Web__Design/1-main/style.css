@@ -108,6 +108,7 @@ textarea {
     border-left: none;
     height: 40px;
     transition: all 100ms ease;
+    padding: 10px 10px;
 }
 
 textarea {
